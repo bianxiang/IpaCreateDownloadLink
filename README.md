@@ -23,33 +23,33 @@
 <key>kind</key>
 <string>software-package</string>
 <key>url</key>
-<string>https://raw.githubusercontent.com/yangtianyan/HookLive4iPhone/master/live4iphone.ipa</string>//上传上去ipa的外链
+<string>https://github.com/bianxiang/IpaCreateDownloadLink/blob/master/App/ios/Runner.ipa</string>//上传上去ipa的外链
 </dict>
 <dict>
 <key>kind</key>
 <string>display-image</string>
 <key>url</key>
-<string>https://raw.githubusercontent.com/yangtianyan/HookLive4iPhone/master/AppIcon57.png</string>//上传上去的`57*57`icon的外链
+<string>https://github.com/bianxiang/IpaCreateDownloadLink/blob/master/App/ios/logo57*57.png</string>//上传上去的`57*57`icon的外链
 </dict>
 <dict>
 <key>kind</key>
 <string>full-size-image</string>
 <key>url</key>
-<string>https://raw.githubusercontent.com/yangtianyan/HookLive4iPhone/master/AppIcon512.png</string>//上传上去的`512*512`icon的外链
+<string>https://github.com/bianxiang/IpaCreateDownloadLink/blob/master/App/ios/logo512*512.png</string>//上传上去的`512*512`icon的外链
 </dict>
 </array>
 <key>metadata</key>
 <dict>
 <key>bundle-identifier</key>
-<string>com.SimBest.scc</string>//
+<string>com.zp.swap.test</string>//
 <key>bundle-version</key>
-<string>5.5.0</string>//版本号
+<string>1.0</string>//版本号
 <key>kind</key>
 <string>software</string>
 <key>title</key>
-<string>live4iPhone</string>//app名字
+<string>SWAP</string>//app名字
 <key>subtitle</key>
-<string>鸡年大吉</string>//随便
+<string>SWAP</string>//随便
 </dict>
 </dict>
 </array>
@@ -63,3 +63,6 @@ itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/
 > `https://raw.githubusercontent.com/yangtianyan/HookLive4iPhone/master/manifest.plist` 是生成的plist的外链
 
 最后讲此链接放入手机的`Safari`中打开就可以了
+
+
+
