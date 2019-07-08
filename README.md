@@ -62,14 +62,17 @@ itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/
 ```
 > `https://raw.githubusercontent.com/bianxiang/IpaCreateDownloadLink/master/App/ios/manifest.plist` 是生成的plist的外链
 
-最后讲此链接放入手机的`Safari`中打开就可以了
+最后讲此链接放入手机的`Safari`中打开就可以了，这个就是iOS对外的链接
 
+- 再把android的apk上传上去生成外链就好啦，如下
+`https://github.com/bianxiang/IpaCreateDownloadLink/blob/master/App/android/app-release.apk?raw=true`，这个就是android对外的链接
 
+- 接下来再把android和ios的链接生成二维码
 
 # 生成二维码的方式
-- 草料二维码（一个链接只能生成一个二维码）
+## 草料二维码（一个链接只能生成一个二维码）
 [点击跳转](https://cli.im)
 ![图片](https://github.com/bianxiang/IpaCreateDownloadLink/blob/master/%E8%8D%89%E6%96%99%E4%BA%8C%E7%BB%B4%E7%A0%81.png?raw=true)
-- 芝麻二维码（2个链接可以生成一个二维码-活码）
+## 芝麻二维码（2个链接可以生成一个二维码-活码）
 [点击跳转](https://www.hotapp.cn)
 ![图片](https://github.com/bianxiang/IpaCreateDownloadLink/blob/master/%E8%8A%9D%E9%BA%BB%E4%BA%8C%E7%BB%B4%E7%A0%81.png?raw=true)
