@@ -5,8 +5,8 @@
 - 生成ipa提交到一个服务器上,生成外链(必须是https)
 `https://raw.githubusercontent.com/yangtianyan/HookLive4iPhone/master/live4iphone.ipa`
 - 在生成两个icon,`512*512`,`57*57`,提交上服务器,生成外链(必须是https)
-`https://raw.githubusercontent.com/yangtianyan/HookLive4iPhone/master/AppIcon57.png`
-`https://raw.githubusercontent.com/yangtianyan/HookLive4iPhone/master/AppIcon512.png`
+`https://github.com/bianxiang/IpaCreateDownloadLink/blob/master/App/ios/logo57*57.png`
+`https://github.com/bianxiang/IpaCreateDownloadLink/blob/master/App/ios/logo512*512.png`
 
 - 创建`manifest.plist`文件
 ```
@@ -58,11 +58,18 @@
 ```
 - 最后生成可以下载的链接
 ```
-itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/yangtianyan/HookLive4iPhone/master/manifest.plist
+itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/bianxiang/IpaCreateDownloadLink/master/App/ios/manifest.plist
 ```
-> `https://raw.githubusercontent.com/yangtianyan/HookLive4iPhone/master/manifest.plist` 是生成的plist的外链
+> `https://raw.githubusercontent.com/bianxiang/IpaCreateDownloadLink/master/App/ios/manifest.plist` 是生成的plist的外链
 
 最后讲此链接放入手机的`Safari`中打开就可以了
 
 
 
+# 生成二维码的方式
+- 草料二维码（一个链接只能生成一个二维码）
+[点击跳转](https://cli.im)
+![图片](https://github.com/bianxiang/IpaCreateDownloadLink/blob/master/%E8%8D%89%E6%96%99%E4%BA%8C%E7%BB%B4%E7%A0%81.png?raw=true)
+- 芝麻二维码（2个链接可以生成一个二维码-活码）
+[点击跳转](https://www.hotapp.cn)
+![图片](https://github.com/bianxiang/IpaCreateDownloadLink/blob/master/%E8%8A%9D%E9%BA%BB%E4%BA%8C%E7%BB%B4%E7%A0%81.png?raw=true)
