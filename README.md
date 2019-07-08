@@ -1,0 +1,2 @@
+# IpaCreateDownloadLink
+根据ipa生成对外下载的链接说明，附含安卓生成对外下载链接，附ios和安卓下载链接生成一个二维码
