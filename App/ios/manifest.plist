@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   manifest.plist
+   Runner
+
+   Created by bianxiang on 2019/7/8.
+   Copyright (c) 2019 The Chromium Authors. All rights reserved.
+-->
+<plist version="1.0">
+    <dict>
+    
+    <key>items</key>
+    <array>
+        <dict>
+            <key>assets</key>
+            <array>
+                <dict>
+                    <key>kind</key>
+                    <string>software-package</string>
+                    <key>url</key>
+<!--                   上传上去ipa的外链-->
+                   <string>https://raw.githubusercontent.com/yangtianyan/HookLive4iPhone/master/live4iphone.ipa</string>
+                </dict>
+                <dict>
+                    <key>kind</key>
+                    <string>display-image</string>
+                    <key>url</key>
+<!--                    上传上去的`57*57`icon的外链-->
+                    <string>https://raw.githubusercontent.com/yangtianyan/HookLive4iPhone/master/AppIcon57.png</string>
+                </dict>
+                <dict>
+                    <key>kind</key>
+                    <string>full-size-image</string>
+                    <key>url</key>
+<!--                   上传上去的`512*512`icon的外链-->
+                   <string>https://raw.githubusercontent.com/yangtianyan/HookLive4iPhone/master/AppIcon512.png</string>
+                </dict>
+            </array>
+            <key>metadata</key>
+            <dict>
+                <key>bundle-identifier</key>
+<!--                bundleid-->
+                <string>com.zp.swap</string>
+                <key>bundle-version</key>
+<!--               版本号 -->
+                <string>1.0</string>
+                <key>kind</key>
+                <string>software</string>
+                <key>title</key>
+<!--                app名字-->
+                <string>SWAP</string>
+                <key>subtitle</key>
+<!--                随便填-->
+                <string>SWAP</string>
+            </dict>
+        </dict>
+    </array>
+    </dict>
+</plist>
