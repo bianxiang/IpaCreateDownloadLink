@@ -71,7 +71,9 @@ itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/
 
 # 生成二维码的方式
 ## 自己写一个html文件根据当前手机环境自动跳转到对应系统
+[项目地址](https://github.com/bianxiang/AppDownloadURL)
 ```
+
 <!DOCTYPE HTML>
 <html lang="zh-CN">
 
@@ -138,7 +140,7 @@ location.href = theUrl;
 </html>
 
 ```
-[生成后如下，可该链接复制到手机点击跳转](https://bianxiang.github.io/AppDownloadURL/)
+[生成后的网页如下，可该链接复制到手机点击跳转](https://bianxiang.github.io/AppDownloadURL/)
 
 ## 第三方
 ### 草料二维码（一个链接只能生成一个二维码）
