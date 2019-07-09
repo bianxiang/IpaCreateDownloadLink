@@ -138,6 +138,7 @@ location.href = theUrl;
 </html>
 
 ```
+[生成后如下，可该链接复制到手机点击跳转](https://bianxiang.github.io/AppDownloadURL/)
 
 ## 第三方
 ### 草料二维码（一个链接只能生成一个二维码）
