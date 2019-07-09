@@ -70,9 +70,79 @@ itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/
 - 接下来再把android和ios的链接生成二维码
 
 # 生成二维码的方式
-## 草料二维码（一个链接只能生成一个二维码）
+## 自己写一个html文件根据当前手机环境自动跳转到对应系统
+```
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+<meta charset="UTF-8">
+<title>SWAP</title>
+<script type="text/javascript">
+// 获取终端的相关信息
+var Terminal = {
+// 辨别移动终端类型
+platform: function () {
+var u = navigator.userAgent, app = navigator.appVersion;
+return {
+// android终端或者uc浏览器
+android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1,
+// 是否为iPhone或者QQHD浏览器
+iPhone: u.indexOf('iPhone') > -1,
+// 是否iPad
+iPad: u.indexOf('iPad') > -1
+};
+}(),
+// 辨别移动终端的语言：zh-cn、en-us、ko-kr、ja-jp...
+language: (navigator.browserLanguage || navigator.language).toLowerCase()
+}
+
+// 根据不同的终端，跳转到不同的地址
+var theUrl = 'https://itunes.apple.com/cn/app/id1414493521';
+if (Terminal.platform.android) {//安卓端
+//          document.write('“简听”安卓版APP开发中，敬请期待！');
+theUrl = 'https://www.pgyer.com/qSsz';
+location.href = theUrl;
+} else {
+if (Terminal.platform.iPhone) {//iPhone端
+theUrl = 'https://itunes.apple.com/cn/app/id1414493521';
+} else if (Terminal.platform.iPad) {//iPad端
+// 还可以通过language，区分开多国语言版
+switch (Terminal.language) {
+case 'en-us'://iPad英文版APP Store地址
+theUrl = 'https://itunes.apple.com/cn/app/id1414493521';
+break;
+case 'ko-kr'://iPad韩语版APP Store地址
+theUrl = 'https://itunes.apple.com/cn/app/id1414493521';
+break;
+case 'ja-jp'://iPad日文版APP Store地址
+theUrl = 'https://itunes.apple.com/cn/app/id1414493521';
+break;
+default://iPad默认APP Store地址
+theUrl = 'https://itunes.apple.com/cn/app/id1414493521';
+}
+}
+
+location.href = theUrl;
+}
+
+</script>
+</head>
+
+<body>
+<!--
+
+-->
+</body>
+
+</html>
+
+```
+
+## 第三方
+### 草料二维码（一个链接只能生成一个二维码）
 [点击跳转](https://cli.im)
 ![图片](https://github.com/bianxiang/IpaCreateDownloadLink/blob/master/%E8%8D%89%E6%96%99%E4%BA%8C%E7%BB%B4%E7%A0%81.png?raw=true)
-## 芝麻二维码（2个链接可以生成一个二维码-活码）
+### 芝麻二维码（2个链接可以生成一个二维码-活码）
 [点击跳转](https://www.hotapp.cn)
 ![图片](https://github.com/bianxiang/IpaCreateDownloadLink/blob/master/%E8%8A%9D%E9%BA%BB%E4%BA%8C%E7%BB%B4%E7%A0%81.png?raw=true)
